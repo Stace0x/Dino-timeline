@@ -51,8 +51,11 @@
 .carousel {
   margin-top: 2rem;
   overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent items from wrapping to a new line */
+  white-space: nowrap; /* Prevent items from wrapping to the next line */
   padding: 1rem;
+  width: 100%; /* Ensure the carousel takes up full width of its container */
+  max-width: 100%; /* Prevent the carousel from expanding beyond the viewport */
+  box-sizing: border-box; /* Ensure padding is included within the width */
 }
 
 .carousel-inner {

@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import "./page.css"; // Assume custom styles are here
+import "./page.css"; 
+import Filter from "./components/Filter/Filter";
 
 // export default function Home () {
 //   // Dummy data for cards
@@ -85,6 +86,11 @@ export default function Home () {
     { id: 3, title: "Card 3", description: "Description for card 3" },
     { id: 4, title: "Card 4", description: "Description for card 4" },
     { id: 5, title: "Card 5", description: "Description for card 5" },
+    // { id: 6, title: "Card 6", description: "Description for card 6" },
+    // { id: 7, title: "Card 7", description: "Description for card 7" },
+    // { id: 8, title: "Card 8", description: "Description for card 8" },
+    // { id: 9, title: "Card 9", description: "Description for card 9" },
+    // { id: 10, title: "Card 10", description: "Description for card 10" }
   ];
 
   return (
@@ -108,8 +114,8 @@ export default function Home () {
         <div className="content">
           {/* Hero Section */}
           <section className="hero">
-            <h2>Welcome to Our Website</h2>
-            <p>Discover amazing content and services.</p>
+            <h2>Welcome to our history</h2>
+            <p>Discover amazing facts on many Dinos</p>
           </section>
 
           {/* Scrollable Cards Carousel */}
@@ -125,6 +131,7 @@ export default function Home () {
           </section>
         </div>
       </div>
+      <Filter />
 
       {/* Footer */}
       <footer className="footer">
